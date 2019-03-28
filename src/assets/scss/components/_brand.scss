@@ -1,0 +1,44 @@
+.brand {
+	@include clearfix();
+	@include breakpoint(xlarge) {
+		//font-size: .875rem;
+		//margin: 1em 0 .875em;
+	}
+
+	font-size: 1rem;
+
+	display: block;
+
+	margin: .875em 0 .875em;
+}
+.brand__logo {
+	@include breakpoint(medium) {
+		display: none;
+	}
+
+    display: none;
+
+	width: 3.25em;
+	.page-has-light-banner & {
+		filter: invert(1) hue-rotate(180deg) contrast(3);
+    }
+    .page-has-light-banner .banner__top.is-stuck & {
+		filter: none;
+    }
+    
+}
+.brand__fulllogo {
+	@include breakpoint(medium) {
+		display: block;
+	}
+
+	display: block;
+
+	width: 9em;
+	.page-has-light-banner & {
+		filter: invert(1) hue-rotate(180deg) contrast(3) drop-shadow(0 0 2px rgba(#000,.75));
+    }
+    .page-has-light-banner .banner__top.is-stuck & {
+		filter: none;
+    }
+}

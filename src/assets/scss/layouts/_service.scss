@@ -1,0 +1,133 @@
+.service {
+    @include xy-grid;
+    @include xy-gutters($grid-margin-gutters, margin, right left, true);
+    
+    // .grid-container:not(last-child) & {
+    //     border-bottom:1px solid $light-gray;
+    // }
+
+
+}
+.service__illwrap, .service__content {
+    @include xy-cell(full,true,map-get( $grid-margin-gutters, small));
+    
+    @include breakpoint(medium) {
+        @include xy-cell(full,true,map-get( $grid-margin-gutters, medium));
+    }
+
+    @include breakpoint(xlarge) {
+        @include xy-cell(6);
+    }
+}
+
+hr.servicedivider {
+    margin:0 auto;
+    border-top:none;
+}
+
+.service__illwrap {
+    //padding-top:6%;
+    @include breakpoint(xlarge) {
+        @include flex-order(2);
+        padding-top:6%;
+        padding-bottom:6%;
+    }
+    @include breakpoint(xlarge) {
+        @include xy-cell(7);
+    }
+}
+
+.service__content {
+    padding:6% 0;
+    margin-top:auto;
+    margin-bottom:auto;
+    @include breakpoint(medium) {
+        padding:6% 10%;
+    }
+    @include breakpoint(large) {
+        padding:6% 19%;
+	}
+    @include breakpoint(xlarge) {
+        @include xy-cell(5);
+
+        @include flex-order(1);
+        padding:6% 4% 6% 0;
+
+    }
+}
+
+.service__head {
+}
+
+.service__title {
+    font-size: 2rem;
+    margin:0 0;
+    font-weight: $global-weight-medium;
+    @include breakpoint(tablet) {
+		font-size: 1.75rem;
+    }
+	&:after {
+		display: block;
+
+		width: 16.666%;
+		height: 2px;
+		margin-top: .666em;
+        margin-bottom: .75em;
+        margin-left:0;
+        margin-right:0;
+
+		content: "";
+        border-top: 1px solid $body-font-color;
+		border-bottom: 1px solid $medium-gray;
+    }
+    
+    small {
+        font-size:50%;
+        display: block;
+        color:inherit;
+        font-family: $serif-font-family;
+        font-style: italic;
+        font-weight: 400;
+        margin:.5em 0 2.25em;
+    }
+
+
+}
+
+.service__lead {
+    @extend .lead;
+    font-size: 1rem;
+    margin-bottom:1rem;
+}
+.service__copy {
+	font-size: .875rem;
+	.button {
+        margin-top:.5rem;
+        margin-bottom:0;
+	}
+}
+
+.service__reveal {
+    width:auto;
+    padding:0;
+    border: none;
+    background-color: transparent;
+}
+
+.service__ill {
+    position: relative;
+}
+.service__videostart {
+    position: absolute;
+    z-index:1;
+    left:50%;
+    top:50%;
+    transform: translate3d(-50%,-50%,0);
+    font-size:5.5rem;
+    line-height: 1;
+    filter: drop-shadow(0 0 5px rgba(#000,.25));
+    outline: none;
+    &:hover, &:focus {
+        filter: drop-shadow(0 0 5px rgba(#000,.5));
+    }
+}

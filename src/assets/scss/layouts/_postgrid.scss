@@ -1,0 +1,27 @@
+.postgrid {
+
+    @include xy-grid;
+    @include xy-gutters($grid-margin-gutters, margin, right left, true);
+    
+    @include xy-grid-layout(1, '.postgrid__item', true, map-get( $grid-margin-gutters, small));
+    
+    @include breakpoint(medium) {
+        @include xy-grid-layout(2, '.postgrid__item', true, map-get( $grid-margin-gutters, medium ));
+    }
+
+    @include breakpoint(large) {
+        @include xy-grid-layout(3, '.postgrid__item', true, map-get( $grid-margin-gutters, medium ));
+    }
+
+    @include breakpoint(xxlarge) {
+        @include xy-grid-layout(4, '.postgrid__item', true, map-get( $grid-margin-gutters, medium ));
+    }
+
+    //margin-bottom: 4rem !important;
+    //min-height: 100vh;
+}
+
+
+.postwrap {
+    min-height: 100vh;   
+}

@@ -1,0 +1,141 @@
+// .contactpanelwrap {
+//     position: relative;
+//     background: $body-background;
+// }
+
+
+[data-aos='slide-mini-up'] {
+    transform: translate3d(0, 200px, 0);
+}
+[data-aos='slide-mini-down'] {
+    transform: translate3d(0, -48px, 0);
+}
+
+[data-aos^='zoom-mini'][data-aos^='zoom-mini'] {
+    opacity: 1;
+    transition-property: opacity, transform;
+  
+    &.aos-animate {
+      opacity: 1;
+      transform: translate3d(0, 0, 0) scale(1);
+    }
+  }
+[data-aos='zoom-mini-out'] {
+    transform: scale(1.075);
+}
+
+.contactpanelwrap {
+    //border: 1px solid $light-gray;
+
+    padding-top: 2rem;
+    padding-bottom:2rem;
+    background-color: $body-background;
+    //margin-top: -12vh;
+    margin-bottom: 0;
+    position: relative;
+    //z-index: 1;
+    @include breakpoint(medium) {
+        margin-top: -12vh;
+        padding: 5% 5%;
+        width: 66%;
+        max-width: 55rem;
+    
+    }
+    @include breakpoint(xlarge) {
+        padding: 2.5% 0 5%;
+
+    }
+    @include breakpoint(xxlarge) {
+        padding: 2.5% 2.5% 5%;
+
+    }
+
+}
+
+
+.contactcopy {
+    h2 {
+        font-size: 1.875rem;
+        margin-bottom:0;
+        @include breakpoint(large) {
+            font-size: 2.25rem;
+        }
+        + p {
+            font-size: 1.125rem;
+            margin-bottom:2.5rem;
+        }
+    }
+    h2, h3, h5,h6 {
+        font-weight: $global-weight-medium;
+    }
+    
+    p {
+        margin:0;
+    }
+    strong {
+        font-weight: $global-weight-medium;
+    }
+    small {
+        font-size: .875rem;
+    }
+ 
+    em {
+        font-family: $serif-font-family;
+        font-style: italic;
+        font-weight: 400;
+    }
+    h3 {
+        font-size: 1.125rem;
+        margin-bottom:.125em;
+        margin-top:2.5rem; 
+        + p {
+            font-size:rem-calc(14);
+        }
+    }
+    h4 {
+        font-weight: $global-weight-normal;
+        font-size: 1.125rem;
+        margin-bottom:.75em;
+    }   
+    h5, h6 {
+        font-size: 1rem;
+        margin-bottom:0;
+    }
+    hr {
+        width:12.666%;
+        margin:calc(.75rem + 2%) auto;
+    }
+
+    a[href^="mailto"] {
+        //color:inherit;
+        //font-weight: $global-weight-bold;
+        //font-size: .875rem;
+        
+
+
+    }
+    a[href^="tel"] {
+        color:inherit;
+        //font-size: .875rem;
+        // &:after {
+        //     content:'';
+        //     display: block;
+        //     height:1rem;
+        //     width:100%;
+        // }
+    }
+}
+
+
+.contactpeople {
+    //font-size:.875rem;
+    margin-top:3.5rem;
+    //margin-bottom:1rem;
+    p {
+        line-height: 1.4;
+        font-size:rem-calc(14);
+    }
+    > .cell {
+        margin-bottom:3rem;
+    }
+}

@@ -1,0 +1,320 @@
+.cell--narrow {
+    @include breakpoint(large) {
+        padding-left:7.5%;
+        padding-right:7.5%;
+    }
+}
+.cb {
+    padding:20% 0;
+
+    @include xy-grid;
+    @include xy-gutters($grid-margin-gutters, margin, right left, true);
+    @include breakpoint(large) {
+        padding:15% 0;
+    }
+    // @include breakpoint(xxlarge) {
+    //     padding:15% 0;
+    // }
+    hr {
+        width:25%;
+        max-width: 8rem;
+        display: inline-block;;
+        margin:1.5rem 0;
+    }
+
+}
+
+.cb--pairy {
+    padding:8rem 0 10% 0;
+    @include breakpoint(large) {
+        padding:15% 0 7.5% 0;
+    }
+}
+
+.cb--pairy--vcenter {
+    padding:8rem 0 8rem 0;
+    @include breakpoint(large) {
+        padding:5% 0 5% 0;
+    }
+
+    .cb__title {
+        max-width: 10em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .cb__lead {
+        max-width: 27em !important; 
+    }
+}
+
+.cb--pairy--compact {
+    padding:6rem 0 2rem 0;
+    @include breakpoint(large) {
+        padding:9% 0 3% 0;
+    }
+    .cb__title {
+        max-width: 12em;
+        margin-left: auto;
+        margin-right: auto;
+        .page-template-tmpl-about & {
+            max-width: 10em;
+        }
+    }
+
+    .cb__lead {
+        max-width: 27em !important; 
+    }
+}
+
+
+.cb--solo {
+
+}
+.cb--narrow {
+    padding:4rem 0;
+    @include breakpoint(large) {
+        padding:7.5% 0;
+    }
+}
+.cb--nobottom {
+    padding-bottom:0;
+    @include breakpoint(large) {
+        padding-bottom:0;
+    }
+}
+.cb--notop {
+    padding-top:0;
+    @include breakpoint(large) {
+        padding-top:0;
+    }
+}
+.cb--nopadding {
+    padding:0;
+    @include breakpoint(large) {
+        padding:0;
+    }
+}
+.cb--nohpadding {
+    padding-left:0;
+    padding-right:0;
+    @include breakpoint(large) {
+        padding-left:0;
+        padding-right:0;
+    }
+}
+.cb__head, .cb__text {
+    @include xy-cell(full,true,map-get( $grid-margin-gutters, small));
+    
+    @include breakpoint(medium) {
+        padding:0 12%;
+        @include xy-cell(full,true,map-get( $grid-margin-gutters, medium));
+    }
+
+    @include breakpoint(tablet) {
+        padding:0;
+    }
+    @include breakpoint(large) {
+        padding:0 15%;
+    }
+
+    .cb--pairy & {
+        text-align: center;
+        @include breakpoint(medium) {
+            padding:0;
+        }
+        @include breakpoint(large) {
+            padding:0 15%;
+        }
+    }
+    .cb--pairy--nocenter & {
+        text-align: left;
+    }
+
+    .cb--solo & {
+        text-align: center;
+        @include breakpoint(tablet) {
+            padding:0 20%;
+        }
+        @include breakpoint(large) {
+            padding:0 25%;
+        }
+    }
+
+    .cb--nopadding & {
+        @include breakpoint(large) {
+            padding:0 0;
+        }
+    }
+
+    .button {
+        margin:.5rem 0 0;
+    }
+}
+
+.cb--solo--justified {
+    .cb__text {
+        text-align: justify;
+    }
+}
+
+.cb__cell {
+    @include xy-cell(full,true,map-get( $grid-margin-gutters, small));
+    
+    @include breakpoint(medium) {
+        @include xy-cell(full,true,map-get( $grid-margin-gutters, medium));
+    }
+
+    margin-bottom:5%;
+    .cb__text + & {
+        margin-top:2.5%;
+        margin-bottom:0;
+    }
+}
+
+// .cb__head {
+//     .cb--pairy & {
+//         @include breakpoint(large) {
+//             padding:0 0 0 7.5%;
+//         } 
+//     }
+// }
+
+.cb__text {
+    text-align: justify;
+    
+    .cb--pairy &, .cb--nopadding & {
+        &:after {
+            content:'';
+            display: inline-block;
+            width:16.666%;
+            height: 2px;
+            border-top:1px solid $body-font-color;
+            border-bottom:1px solid $medium-gray;
+            margin-top:1.5rem;
+           
+        }
+    }
+    
+
+    .cb--pairy--nocenter & {
+        &:after {
+            // @include breakpoint(tablet) {
+            //     margin-left:25%;
+            // }
+
+        }
+    }
+    > * {
+        &:last-child() {
+            margin-bottom:0;
+        }
+    }
+}
+.cb__text--left {
+    text-align: left;
+    
+    @include breakpoint(medium) {
+        max-width: 90%;
+        padding-left:0;
+        padding-right:0;
+    }
+    @include breakpoint(large) {
+        //padding-left:0;
+    }
+
+}
+
+.cb__text--nolinea {
+        &:after {
+            display:none !important;
+        }
+}
+
+.cb__title {
+    font-size: 2rem;
+    font-weight: $global-weight-medium;
+    @include breakpoint(xlarge) {
+        font-size: 2.5rem;
+    }
+    // .cb--pairy & {
+    //     font-size: 2.5rem;
+    //     margin-bottom: 1rem;
+    //     @include breakpoint(tablet) {
+    //         margin-bottom:0;
+    //     }
+    //     @include breakpoint(xlarge) {
+    //         font-size: 3.125rem;
+    //     }
+    // }
+}
+.cb__title--accent {
+    font-weight: $global-weight-bold;
+    font-size: 2.75rem;
+    margin-bottom: .333em;
+    @include breakpoint(medium) {
+        font-size: 3.25rem;
+    }
+    @include breakpoint(tablet) {
+        font-size: 3.25rem;
+    }
+    @include breakpoint(large) {
+        font-size: 3.75rem;
+    }
+    @include breakpoint(xlarge) {
+        font-size: 4rem;
+    }
+}
+.cb__lead {
+    @extend .lead;
+    .cb--pairy & {
+        max-width: 40em;
+        margin-left:auto;
+        margin-right:auto;
+        @include breakpoint(large) {
+            font-size: 1.333rem;
+        }
+    }
+    .cb--pairy--nocenter & {
+        margin-left:0;
+        // @include breakpoint(tablet) {
+        //     max-width:none;
+        //     margin-left:25%;
+        //     margin-top:2%;
+        // }
+    }
+}
+
+.cb__head {
+    &:after {
+        content:'';
+        display: inline-block;
+        width:25%;
+        height: 2px;
+        border-top:1px solid $body-font-color;
+        border-bottom:1px solid $medium-gray;
+        margin-top:1.5rem;
+        margin-bottom:1.5rem;
+    }
+    .cb--pairy &, &.cb__head--nolinea {
+        &:after {
+            display:none;
+        }
+    }
+}
+
+.cb__head--left {
+    
+    @include breakpoint(medium) {
+        max-width: 90%;
+        padding-left:0;
+        padding-right:0;
+    }
+    @include breakpoint(large) {
+        //padding-left:0;
+    }
+
+}
+
+
+

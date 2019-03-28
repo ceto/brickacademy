@@ -1,0 +1,26 @@
+.qplist {
+	@include breakpoint(medium) {
+		column-gap: rem-calc(60px);
+	}
+	@include breakpoint(tablet) {
+		column-count: 3;
+	}
+	@include breakpoint(xlarge) {
+		//font-size: 1rem;
+		//column-count: 3;
+	}
+
+	font-size: .875rem;
+
+	margin: 0;
+	padding: 0 1.75%;
+
+	list-style: none;
+
+	column-count: 2;
+	column-gap: rem-calc(40px);
+
+	 > li {
+		margin-bottom: .333em;
+	}
+}

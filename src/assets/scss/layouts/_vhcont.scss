@@ -1,0 +1,26 @@
+.vhcont {
+    //height: calc(100vh);
+    min-height: 100vh;
+    margin-top:0;
+    //position: relative;
+    display: flex;
+    //transition: all .7s cubic-bezier(.22, .61, .36, 1);
+    transition: min-height .8s cubic-bezier(.22, .61, .36, 1), margin .8s cubic-bezier(.22, .61, .36, 1);
+    transform: translateZ(0);
+    > * {
+        //position: relative;
+        margin-top: auto;
+        margin-bottom: auto;
+        //transform: translateY(-50%);
+    }
+
+    &--not-top {
+        //padding-top:4rem;
+        min-height: 44rem;
+        margin-bottom:-6rem;
+        .error404 & {
+            min-height: 100vh;
+            margin-bottom: 0;
+        }
+    }
+}

@@ -1,0 +1,51 @@
+.supertitle {
+    font-size: 2rem;
+    font-weight: $global-weight-bold;
+    margin: 0 0;
+    box-decoration-break: clone;
+    background-color: $primary-color;
+    color:$white;
+    display: inline;
+    line-height: 1.5;
+    padding-left:.333em;
+    padding-right:.333em;
+    padding-top:.1333em;
+    padding-bottom:.1333em;
+
+    @include breakpoint('large') {
+        font-size: 2.5rem;
+    }
+    + * {
+        margin-top: 2rem;
+    }
+    .copy & {
+        color:$white;
+    }
+}
+.superlead {
+    font-weight: $global-weight-bold;
+}
+
+.superlinea {
+    //margin:2rem auto;
+    width: 8rem;
+    max-width:33.333%;
+    height:3px;
+    border:none;
+    display: inline-block;
+    background-image: linear-gradient(90deg, $primary-color .75rem, transparent .75rem, transparent 1.5rem, $primary-color 1.5rem);
+}
+
+.superaccent {
+    color:$primary-color;
+    font-weight: $global-weight-bold;
+    font-size:1.333rem;
+    margin:0;
+    text-align: center;
+    padding:0 7.5%;
+    @include breakpoint('large') {
+        font-size: 2rem;
+        padding:0;
+        
+    }
+}

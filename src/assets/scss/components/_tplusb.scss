@@ -1,0 +1,29 @@
+.tplusb {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    //text-align:center;
+    @include breakpoint(tablet) {
+        flex-wrap: nowrap;
+        //text-align:left;
+    }
+
+}
+
+.tplusb__t {
+    margin:1rem 0;
+    @include breakpoint(tablet) {
+        margin:1rem 2rem 1rem 0;
+        font-size:1.75rem;
+    }
+}
+
+.tplusb__b {
+    margin: 1rem 0;
+    text-transform: uppercase;
+    @include breakpoint(tablet) {
+        margin:1rem 0;
+        font-size: 1.125rem;
+    }
+}
