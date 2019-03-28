@@ -97,7 +97,10 @@
 }
 .ps--pricol {
 	color: $white;
-	background-color: $primary-color;
+    background-color: $primary-color;
+    a {
+        color:$white;
+    }
 }
 .ps--seccol {
 	color: $white;
