@@ -128,15 +128,18 @@
     padding-bottom:.1875em;
     margin: 0 0;
     display: inline;
+    + div {
+        margin-top:2em;
+    }
 }
 
 .hero__lead {
     line-height: 1.4;
-    font-weight: $global-weight-medium;
+    font-weight: $global-weight-regular;
     max-width: 30em !important;
-    font-size:1.25em;
+    font-size:1.125em;
     text-shadow: 0 0 1rem rgba(#000, 0.75);
-    margin:1em 0 1em;
+    margin:1em 0 2em;
 }
 
 .hero__addition {
@@ -145,7 +148,7 @@
     text-transform: uppercase;
     color:$primary-color;
     font-weight: $global-weight-bold;
-    margin:0;
+    margin:0 0 0 1.5rem;
 }
 
 .hero__calloutcontainer {
@@ -189,7 +192,7 @@
     em {
         font-style: normal;
         font-size:.666em;
-        font-weight: $global-weight-medium;
+        font-weight: $global-weight-regular;
     }
 }
 .hero__callout {
@@ -200,6 +203,7 @@
     max-width: 22rem;
     margin:0 auto;
     font-size:1.125rem;
+    font-weight: $global-weight-regular;
 
     //border:1px solid $light-gray;
     //margin-bottom: 2rem;
@@ -242,6 +246,7 @@
 .callout__title {
     text-transform: uppercase;
     font-size:1.75rem;
+    letter-spacing: .125em;
 }
 .hero__callout__footer {
     font-size: 0.875rem;

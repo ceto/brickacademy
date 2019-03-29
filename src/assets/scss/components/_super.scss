@@ -6,7 +6,7 @@
     background-color: $primary-color;
     color:$white;
     display: inline;
-    line-height: 1.5;
+    line-height: 1.5666;
     padding-left:.333em;
     padding-right:.333em;
     padding-top:.1333em;
@@ -35,7 +35,7 @@
 
 .superlinea {
     //margin:2rem auto;
-    width: 8rem;
+    width: 6rem;
     max-width:33.333%;
     height:.1666rem;
     border:none;
@@ -115,4 +115,10 @@
         height:100%;
         object-fit: cover;
     }
+}
+
+
+.logoka {
+    height: 6rem;
+    max-width: 90%;
 }
