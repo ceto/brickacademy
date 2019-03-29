@@ -119,6 +119,8 @@
 
 
 .logoka {
-    height: 6rem;
-    max-width: 90%;
+    height: 5rem;
+    @include breakpoint('large') {
+        height: 6rem;
+    }
 }
