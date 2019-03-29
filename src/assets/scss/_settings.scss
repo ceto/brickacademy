@@ -75,7 +75,7 @@ $foundation-palette: (
   warning: #ffae00,
   alert: #cc4b37,
 );
-$light-gray: #e6e6e6; $light-gray-2: #dedede;
+$light-gray: #e6e6e6; $light-gray-2: #dedede; $xlight-gray: #efefef;
 $medium-gray: #cacaca;
 $dark-gray: #3e3e3e; $darker-gray: #1e1e1e;
 $black: #0a0a0a;
@@ -283,9 +283,9 @@ $button-font-family: $body-font-family;
 $button-padding: 0.85em 1.5em;
 $button-margin: 0 0 $global-margin 0;
 $button-fill: solid;
-$button-background: $body-font-color;
+$button-background: $xlight-gray;
 $button-background-hover: scale-color($button-background, $lightness: -15%);
-$button-color: $white;
+$button-color: $primary-color;
 $button-color-alt: $white;
 $button-radius: 0;;
 $button-hollow-border-width: 1px;
@@ -295,7 +295,11 @@ $button-sizes: (
   default: 0.9rem,
   large: 1.125rem,
 );
-$button-palette: $foundation-palette;
+$button-palette: (
+    primary: $xlight-gray,
+    dark: $body-font-color,
+    white: $white
+);
 $button-opacity-disabled: 0.25;
 $button-background-hover-lightness: -20%;
 $button-hollow-hover-lightness: -50%;

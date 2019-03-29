@@ -19,6 +19,7 @@ html {
 }
 body {
     position: relative;
+    overflow-x: hidden;
 }
 .main {
     //min-height: 60vh;
@@ -123,13 +124,13 @@ body {
     min-width: 14em;
 
     font-weight: $global-weight-bold;
-    //text-transform: uppercase;
+    text-transform: uppercase;
     font-style: normal;
     //text-shadow: 0 0 2px rgba(#000,.25);
     &:hover,
     &:focus {
-        color: $white;
-        background-color: $primary-color;
+        //color: $white;
+        background-color: $body-font-color;
     }
 }
 
