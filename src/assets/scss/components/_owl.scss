@@ -1,0 +1,190 @@
+/*
+ *  Default theme - Owl Carousel CSS File
+ */
+
+ $color-base:      #869791 !default;
+ $color-white:     #FFF !default;
+ $color-gray:      #D6D6D6 !default;
+
+ //nav
+
+ $nav-color:       $color-white !default;
+ $nav-color-hover:   $color-white !default;
+ $nav-font-size:     14px !default;
+ $nav-rounded:       3px !default;
+ $nav-margin:      5px !default;
+ $nav-padding:       4px 7px !default;
+ $nav-background:    $color-gray !default;
+ $nav-background-hover:  $color-base !default;
+ $nav-disabled-opacity:  0.5 !default;
+
+ //dots
+
+ $dot-width:       10px !default;
+ $dot-height:      10px !default;
+ $dot-rounded:     0 !default;
+ $dot-margin:      5px 3px !default;
+ $dot-background:    $medium-gray !default;
+ $dot-background-active: $dark-gray !default;
+
+
+ .owl-testi {
+   // Styling Next and Prev buttons
+   padding-top: 3.5rem;
+   .owl-nav {
+     text-align: center;
+     -webkit-tap-highlight-color: transparent;
+
+     [class*='owl-'] {
+       color: $nav-color;
+       font-size: $nav-font-size;
+       margin: $nav-margin;
+       padding: $nav-padding;
+       background: $nav-background;
+       display: inline-block;
+       cursor: pointer;
+       border-radius: 3px;
+
+       &:hover {
+         background: $nav-background-hover;
+         color:$nav-color-hover;
+         text-decoration: none;
+       }
+     }
+     .disabled {
+       opacity: $nav-disabled-opacity;
+       cursor: default;
+     }
+   }
+
+   // Styling dots
+   .owl-nav.disabled + .owl-dots {
+     //margin-top: 10px;
+   }
+
+   .owl-dots {
+     position: absolute;
+     top:0;
+     left:0;
+     width:100%;
+     text-align: center;
+     -webkit-tap-highlight-color: transparent;
+
+     .owl-dot {
+       display: inline-block;
+       zoom: 1;
+       *display: inline;
+
+       span {
+         width: $dot-width;
+         height: $dot-height;
+         margin: $dot-margin;
+         background: $dot-background;
+         display: block;
+         -webkit-backface-visibility: visible;
+         transition: opacity 200ms ease;
+         border-radius: $dot-rounded;
+       }
+
+       &.active,
+       &:hover {
+         span {
+           background: $dot-background-active;
+         }
+       }
+     }
+   }
+ }
+
+
+
+
+ .hbpslider, .hbpslider .owl-stage {
+   overflow: hidden;
+   height:12rem;
+   max-height: 40rem;
+   @include breakpoint(tablet) {
+     height:25rem;
+   }
+   @include breakpoint(xlarge) {
+     height:50vh;
+     min-height: 30rem;
+
+   }
+ }
+
+ .hbpslider {
+   overflow: auto;
+   //box-shadow: 0 0 10px 0 rgba(#000,.25);
+
+ }
+
+ .hbpslider__img {
+   height:12rem;
+   width:auto !important;
+   max-width: none;
+       max-height: 40rem;
+   display: block;
+
+   @include breakpoint(tablet) {
+     height:25rem;
+   }
+   @include breakpoint(xlarge) {
+     height:50vh;
+     min-height: 30rem;
+   }
+ }
+
+ .slidernav.owl-nav {
+   [class*=owl-] {
+       display: inline-block;
+       height:1.333rem;
+       width:1.333rem;
+       font-size: 1.333rem;
+       padding:0;
+       background-color: $dark-gray;
+       color:$white;
+       line-height: 1.125rem;
+       text-align: center;
+       user-select: none;
+       &:hover, &:focus {
+         background-color: $alert-color;
+         color:$white;
+         cursor: pointer;
+       }
+       &:first-child() {
+         margin-right: 1px;
+       }
+   }
+ }
+
+ .owl-slider.owl-carousel {
+
+   .owl-nav {
+     margin:0;
+     position: absolute;
+     //top:50%;
+     top:1rem;
+     right:1rem;
+     //background-color: blue;
+     //transform: translateY(-50%);
+     [class*=owl-] {
+         display: inline-block;
+       height:2rem;
+       width:1.75rem;
+       font-size: 1.5rem;
+       font-weight: $global-weight-bold;
+       padding:0;
+       background-color: $primary-color;
+       box-shadow: 0 0 3px 0 rgba(#000,.35);
+       color:$white;
+       line-height: 1;
+       text-align: center;
+       margin-left: 1px;
+       &:hover {
+         background-color: $black;
+         color:$white;
+       }
+     }
+   }
+ }

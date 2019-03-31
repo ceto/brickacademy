@@ -3,6 +3,7 @@
 @import 'settings';
 @import 'foundation';
 @import 'motion-ui';
+@import 'node_modules/owl.carousel/src/scss/owl.carousel.scss';
 
 // Global styles
 @include foundation-global-styles;
