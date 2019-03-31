@@ -25,16 +25,17 @@
     .page-has-light-banner .banner__top.is-stuck & {
 		filter: none;
     }
-    
+
 }
 .brand__fulllogo {
-	@include breakpoint(medium) {
-		display: block;
-	}
+
 
 	display: block;
 
-	width: 10em;
+    width: 8.5em;
+    @include breakpoint(large) {
+        width: 10em;
+	}
 	.page-has-light-banner & {
 		filter: invert(1) hue-rotate(180deg) contrast(3) drop-shadow(0 0 2px rgba(#000,.75));
     }

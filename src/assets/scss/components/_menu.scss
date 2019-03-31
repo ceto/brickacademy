@@ -10,6 +10,7 @@
 }
 
 .dropdown.menu--main {
+    text-transform: uppercase;
     > li {
         &:first-child {
             > a {
@@ -123,8 +124,9 @@
 
 .menu--mobilemain {
     font-weight: $global-weight-medium;
+
     a {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
 
         padding: 0.5em 0;
 

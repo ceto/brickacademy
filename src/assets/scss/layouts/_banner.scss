@@ -51,9 +51,9 @@
 
 .menutoggler {
     @include hamburger($body-font-color, $primary-color, 26px, 18px, 2px, 4);
-    margin: .875rem 0 0 0;
+    margin: 1.125rem 0 0 0;
     outline: none;
-    
+
     .page-has-light-banner & {
 		filter: invert(1) hue-rotate(180deg) contrast(3);
     }

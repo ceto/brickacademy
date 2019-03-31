@@ -208,7 +208,7 @@
     	//bottom:0;
     	@include breakpoint(tablet) {
     		bottom:-4.5em;
-        	background-color: transparent;
+        	//background-color: transparent;
     	}
         @include breakpoint(xxlarge) {
         	bottom:0;

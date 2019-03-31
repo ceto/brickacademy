@@ -6,4 +6,4 @@ dist
 *.swp
 .cache
 .idea
-.dploy.yaml
+dploy.yaml

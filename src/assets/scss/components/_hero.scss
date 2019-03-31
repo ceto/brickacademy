@@ -209,7 +209,7 @@
     //margin-bottom: 2rem;
 
     @include breakpoint(tablet) {
-        
+
 
         margin:0 0 0 auto;
         //mix-blend-mode: multiply;
@@ -257,5 +257,5 @@
 }
 
 .hero__callout__head {
-
+    margin-bottom: 1rem;
 }
