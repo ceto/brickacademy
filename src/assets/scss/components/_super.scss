@@ -64,7 +64,7 @@
     @include breakpoint('large') {
         font-size: 2rem;
         padding:0;
-        
+
     }
 }
 
@@ -81,9 +81,9 @@
 
 }
 .felesintro {
-    
+
     @include breakpoint('tablet') {
-        
+
         > * {
             margin-right:10%;
             max-width: 35rem;
@@ -104,11 +104,11 @@
     background-color: #000;
     @include breakpoint('tablet') {
         width:35vw;
-        
+
     }
     @include breakpoint('xlarge') {
         width:50vw;
-        
+
     }
     img {
         width:100%;
