@@ -52,18 +52,21 @@
     &.light {
         color:$white;
     }
+    // margin-top:2rem;
+    // margin-bottom:2rem;
 }
 
 .superaccent {
     color:$primary-color;
     font-weight: $global-weight-bold;
     font-size:1.333rem;
-    margin:0;
+    margin:0 auto;
     text-align: center;
     padding:0 7.5%;
     @include breakpoint('large') {
-        font-size: 2rem;
+        font-size: 1.75rem;
         padding:0;
+        max-width: 35em;
 
     }
 }
@@ -141,5 +144,5 @@
         display:block;
         font-size:.875rem;
         color: #286AA6;
-    } 
+    }
 }

@@ -41,6 +41,11 @@ $(document).ready(function() {
         navText: ["‹", "›"],
         // navContainer: "#slidernav",
         dots: false,
+        //autoplay: true,
+        //autoplayTimeout: 2000,
+        //autoplaySpeed: 2000,
+        //fluidSpeed: 8000,
+        autoplayHoverPause: true,
         responsive: {
             0: {
                 items: 1
