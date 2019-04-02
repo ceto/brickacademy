@@ -72,15 +72,29 @@
 }
 
 .bigpics {
+    position: relative;
     background-image: url(../img/teamwearblack.jpg);
     background-size: cover;
     background-position: top 40% center;
     background-attachment: fixed;
+
+    height:56.25vw;
+
     img {
-        display: none;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
     }
-    height:50rem;
-    max-height:75vh;
+
+    @include breakpoint('xxlarge') {
+        height:50rem;
+        max-height:75vh;
+        img {
+            display: none;
+        }
+    }
+
 
 }
 .felesintro {
@@ -107,8 +121,11 @@
     background-color: #000;
     @include breakpoint('tablet') {
         width:35vw;
-
     }
+    // @include breakpoint('large') {
+    //     width:35vw;
+
+    // }
     @include breakpoint('xlarge') {
         width:50vw;
 

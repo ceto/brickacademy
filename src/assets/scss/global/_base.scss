@@ -8,6 +8,7 @@ img {
     object-fit: cover;
 }
 html {
+    overflow-x: hidden;
     @media screen and (min-width: 110em) {
         font-size: 105.625%;
         //font-size: 112.5%;
