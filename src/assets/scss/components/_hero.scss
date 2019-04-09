@@ -4,7 +4,7 @@
     color: #fff;
     //border-top:1px solid $xlight-gray;
     //border-bottom: 1px solid $light-gray;
-    background-color: #000;
+    background-color: lighten(#000,80%);
     @include breakpoint(tablet) {
         height: 36rem;
     }
@@ -24,7 +24,7 @@
     font-size:.875rem;
     padding:calc(4rem + 4vw) 0;
     z-index: 2;
-    background-image: linear-gradient(90deg, rgba(#000,.5)), url(../img/comingsoon.jpg);
+    background-image: linear-gradient(90deg, rgba(#000,.5)), url(../img/archviz-course-at-brick-academy.jpg);
     background-size: cover;
     background-position: top center;
     @include breakpoint(tablet) {
@@ -79,17 +79,23 @@
     z-index: 0;
     margin:0;
     padding:0;
+    background-color: inherit;
     img {
         display: none;
         width: 100%;
         height: 100%;
         max-width: none;
         object-fit: cover;
+        object-position: center 70%;
+        mix-blend-mode: multiply;
+
         @include breakpoint(tablet) {
             display: block;
         }
     }
+
     &:after {
+        display: block;
         position: absolute;
         content:'';
         left:0;
@@ -97,8 +103,15 @@
         width: 100%;
         height: 100%;
         background-color: rgba(#000,.5);
-        //background-image: linear-gradient(60deg, rgba(#000,.75) 0, transparent 75%);
     }
+
+    @supports (mix-blend-mode: multiply) {
+        &:after {
+            display:none;
+        }
+    }
+
+
 }
 .hero__titlewrap {
     margin-bottom:.5rem;
