@@ -122,11 +122,12 @@ body {
 }
 .button {
     //font-family: $header-font-family;
-    min-width: 14em;
+    min-width: 16em;
 
     font-weight: $global-weight-bold;
     text-transform: uppercase;
     font-style: normal;
+
     //text-shadow: 0 0 2px rgba(#000,.25);
     &:hover,
     &:focus {

@@ -56,18 +56,40 @@
     // margin-bottom:2rem;
 }
 
+.promoblock {
+    text-align: center;
+    @include breakpoint('large') {
+        text-align: initial;
+        align-items: center;
+    }
+}
 .superaccent {
     color:$primary-color;
     font-weight: $global-weight-bold;
-    font-size:1.333rem;
-    margin:0 auto;
-    text-align: center;
-    padding:0 7.5%;
-    @include breakpoint('large') {
-        font-size: 1.75rem;
-        padding:0;
-        max-width: 35em;
+    font-size:1.25rem;
+    margin:0 auto 1em auto;
+    padding:0 0;
+    max-width: 35em;
+    line-height:1.4;
+    @include breakpoint('tablet') {
+        font-size: 1.333rem;
 
+    }
+    @include breakpoint('large') {
+        margin:0 0;
+    }
+    @include breakpoint('xlarge') {
+        font-size: 1.5rem;
+    }
+}
+.superbutton {
+    margin: 0;
+    @include breakpoint('large') {
+        font-size: 1rem;
+
+    }
+    @include breakpoint('xlarge') {
+        font-size: 1.125rem;
     }
 }
 
