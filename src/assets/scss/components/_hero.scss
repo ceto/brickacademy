@@ -19,6 +19,21 @@
     }
 }
 
+.hero--large {
+    @include breakpoint(tablet) {
+        height: 36rem;
+    }
+    @include breakpoint(large) {
+        height: calc(100vh - 8.5rem);
+    }
+    @include breakpoint(xlarge) {
+        height: calc(100vh - 7.5rem);
+    }
+    // @include breakpoint(xxlarge) {
+    //     height: 40rem;
+    // }
+}
+
 .hero__content {
     position: relative;
     font-size:.875rem;
@@ -27,6 +42,13 @@
     background-image: linear-gradient(90deg, rgba(#000,.5)), url(../img/archviz-course-at-brick-academy.jpg);
     background-size: cover;
     background-position: top center;
+
+    .hero--large & {
+        background-image: linear-gradient(90deg, rgba(#000,.5)), url(../img/archviz-for-architects-hero-mobile.jpg);
+        @include breakpoint(tablet) {
+            background-image: none;
+        }
+    }
     @include breakpoint(tablet) {
         background-color: transparent;
         padding:0;
@@ -128,6 +150,9 @@
     padding-right:.333em;
     padding-top:.1333em;
     padding-bottom:.1333em;
+    &--nocolor {
+        background-color: $body-font-color;
+    }
 }
 
 .hero__subtitle {
@@ -143,6 +168,9 @@
     padding-bottom:.1875em;
     margin: 0 0;
     display: inline;
+    &--nocolor {
+        background-color: $body-font-color;
+    }
     + div {
         margin-top:2em;
     }

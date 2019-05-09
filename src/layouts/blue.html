@@ -1,0 +1,44 @@
+{{!-- This is the base layout for your project, and will be used on every page unless specified. --}}
+
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Archviz for Architects Course | Brick Academy</title>
+        <meta
+            name="description"
+            content="Learn to create engaging contents with simple tools and techniques to be able to translate your designs into stunning visuals easily. Gain competitive advantage at competitions and design follow-ups."
+        />
+        <!-- <meta
+            property="og:image"
+            content="https://brickvisual.com/academy/intensive-archviz-course/assets/img/junior-3d-artist-course-promotion.jpg"
+        /> -->
+        <link rel="stylesheet" href="https://use.typekit.net/qlw0hcu.css" />
+        <link rel="stylesheet" href="{{ root }}assets/css/app-blue.css?v=114" />
+        <link rel="icon" type="image/png" href="{{ root }}assets/img/favicon-blue.png" />
+        <meta name="theme-color" content="#25A7E0" />
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-37753223-4"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+
+            gtag("config", "UA-37753223-4");
+        </script>
+    </head>
+    <body>
+        {{> header-blue }}
+
+        {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
+        {{> body}}
+
+        {{> footer }}
+        {{> icons }}
+        <script src="{{ root }}assets/js/app.js?v=114"></script>
+    </body>
+</html>
