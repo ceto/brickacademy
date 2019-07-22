@@ -13,7 +13,9 @@ require("foundation-sites");
 // the line below
 //import './lib/foundation-explicit-pieces';
 
-$(document).foundation();
+import "./lib/createpswpfromdom";
+
+//$(document).foundation();
 require("owl.carousel");
 
 $(".membercard").on("click", "a", function(e) {
