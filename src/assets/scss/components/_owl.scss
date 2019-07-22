@@ -125,6 +125,7 @@
    max-width: none;
        max-height: 40rem;
    display: block;
+   border-right:1rem solid $white;;
 
    @include breakpoint(tablet) {
      height:25rem;
