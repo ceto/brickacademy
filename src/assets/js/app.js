@@ -8,6 +8,7 @@ import "what-input";
 // have the hoisting behavior.
 window.jQuery = $;
 require("foundation-sites");
+var imagesLoaded = require("imagesloaded");
 
 // If you want to pick and choose which modules to include, comment out the above and uncomment
 // the line below
@@ -35,7 +36,6 @@ $(".membercard__details").on("click", function(e) {
 $(document).ready(function() {
     var tabletbp = Foundation.MediaQuery.get("tablet"),
         xlargebp = Foundation.MediaQuery.get("xlarge");
-
     $(".owl-slider").owlCarousel({
         autoWidth: true,
         loop: true,
@@ -59,5 +59,10 @@ $(document).ready(function() {
                 items: 3
             }
         }
+    });
+
+    imagesLoaded(document.querySelector(".owl-slider"), function(instance) {
+        $(".owl-slider").owlCarousel("refresh");
+        //console.log("loaded");
     });
 });
