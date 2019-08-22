@@ -39,7 +39,7 @@
     font-size:.875rem;
     padding:calc(4rem + 4vw) 0;
     z-index: 2;
-    background-image: linear-gradient(90deg, rgba(#000,.5)), url(../img/archviz-course-at-brick-academy.jpg);
+    background-image: linear-gradient(90deg, rgba(#000,.5)), url(../img/intensive-mobile.jpg);
     background-size: cover;
     background-position: top center;
 
@@ -309,6 +309,17 @@
         &:last-child() {
             margin-bottom:0;
         }
+    }
+    .warning {
+        display: inline-block;
+        border: 1px solid currentColor;
+        line-height: 1;
+        font-weight: $global-weight-bold;
+        text-transform: uppercase;
+        padding:.5em .75em .333em;
+        font-size: 87.5%;
+        letter-spacing: .05em;
+        // position: absolute;
     }
 }
 .callout__title {
