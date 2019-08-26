@@ -312,12 +312,12 @@
     }
     .warning {
         display: inline-block;
-        border: 1px solid currentColor;
+        border: 2px solid currentColor;
         line-height: 1;
         font-weight: $global-weight-bold;
         text-transform: uppercase;
-        padding:.5em .75em .333em;
-        font-size: 87.5%;
+        padding:.333em .5em .2875em;
+        font-size: 66.666%;
         letter-spacing: .05em;
         // position: absolute;
     }
