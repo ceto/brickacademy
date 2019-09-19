@@ -79,6 +79,10 @@
 .ps--dark {
 	color: $body-background;
 	background-color: $dark-gray;
+
+    .themered & {
+        background-color: #31364A;
+    }
 }
 
 .ps--light {
@@ -103,6 +107,12 @@
     }
     a.button {
         color:$primary-color;
+        &:hover, &:focus {
+            background-color: $body-font-color;
+             .themered & {
+                background-color: #31364A;
+            }
+        }
     }
 }
 .ps--seccol {

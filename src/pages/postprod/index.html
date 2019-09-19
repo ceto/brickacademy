@@ -1,5 +1,7 @@
 ---
 layout: red
+jotform: '#'
+pdf: '#'
 ---
 
 <section id="hero" data-magellan-target="hero" class="hero hero--postprod">
@@ -13,9 +15,8 @@ layout: red
             </h2>
             <div><hr class="superlinea" /></div>
             <p class="hero__lead">
-                A masterclass for intermediate to advanced 3D artists. Acquire skills from initial
-                sketching to final touches, focusing on post-production in high-end architectural
-                visualization.
+                A masterclass for intermediate to advanced 3D artists. Acquire skills from initial sketching to final
+                touches, focusing on post-production in high-end architectural visualization.
             </p>
             <!-- <p class="hero__addition">
                 <a href="#">Detailed course info is coming soon</a>
@@ -50,13 +51,13 @@ layout: red
                     <a
                         target="_blank"
                         target="_blank"
-                        href="https://form.jotformeu.com/92242868617365"
+                        href="{{ jotform }}"
                         class="button dark"
-                        >Get Course Alert</a
+                        >Book a Seat</a
                     >
                 </p>
                 <p>
-                    <small>12 seats | 1 week | 40 hours | 4 mentors</small><br />
+                    <small>10 seats | 1 week | 40 hours</small><br />
                     <strong class="accent">500 € + VAT*</strong><br />
                     <small>*where applicable</small>
                 </p>
@@ -68,3 +69,79 @@ layout: red
         </div>
     </div>
 </section>
+<div class="ps ps--narrow ps--dark">
+    <div class="grid-container">
+        <div class="grid-x grid-margin-x promoblock">
+            <div class="cell large-auto">
+                <p class="superaccent">
+                    This course will guide you through high-end image making processes from basic composition rules and
+                    using matte paint elements to adding the final touches.
+                </p>
+            </div>
+            <div class="cell large-shrink">
+                <a target="_blank" href="{{ pdf }}" class="button superbutton green">Download Course Info</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="about" data-magellan-target="about" class="grid-container ps">
+    <div class="grid-x grid-margin-x">
+        <div class="cell tablet-8 large-8 xlarge-6 copy">
+            <div class="felesintro">
+                <h2 class="supertitle">From Effective Sketching<br />to Fine-tuning</h2>
+                <p class="superlead">
+                    This course is for you if you already have significant experience in architectural visualization,
+                    but want to take a step forward.
+                </p>
+                <p>
+                    We designed the masterclass with 3D professionals in mind. We have all been there, where you have
+                    already created some significant and beautiful 3D images, know the basics, learnt the necessary
+                    know-how, but somehow you are missing something that makes your images stand out. Or you are
+                    thinking about implementing a different, more productive workflow, but you just don’t know how to do
+                    it.
+                </p>
+                <p>
+                    At <a target="_blank" href="https://brickvisual.com/">Brick Visual’s</a> masterclass for 3D artist
+                    will elevate your architectural visualizations to a new professional level.
+                </p>
+                <hr class="superlinea" />
+                <ul>
+                    <li>Join a professional environment</li>
+                    <li>Learn the fundamentals of archviz and post-production</li>
+                    <li>Fine-tune your drafting and experimenting skills in image creation</li>
+                    <li>Boost your professional Adobe Photoshop knowledgeh</li>
+                </ul>
+            </div>
+        </div>
+        <div class="cell tablet-4 large-4 xlarge-6">
+            <figure class="kihuzott">
+                <img src="{{ root }}assets/img/academyintro.jpg" alt="Mentoring students at the archviz course" />
+            </figure>
+        </div>
+    </div>
+</div>
+
+<div class="ps ps--narrow ps--dark">
+    <div class="grid-container">
+        <div class="grid-x grid-margin-x promoblock">
+            <div class="cell large-auto">
+                <p class="superaccent">
+                    Join Brick Academy and boost your professional skills!
+                </p>
+            </div>
+            <div class="cell large-shrink">
+                <a target="_blank" href="{{ jotform }}" class="button superbutton green">Book a Seat</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+{{> teachers}}
+
+<div id="facilities" data-magellan-target="facilities">
+    {{> officefigarohightech}}
+    {{> gallery}}
+</div>
+
+{{> contact}}

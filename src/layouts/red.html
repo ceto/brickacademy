@@ -16,7 +16,7 @@
             content="https://brickvisual.com/academy/intensive-archviz-course/assets/img/junior-3d-artist-course-promotion.jpg"
         /> -->
         <link rel="stylesheet" href="https://use.typekit.net/qlw0hcu.css" />
-        <link rel="stylesheet" href="{{ root }}assets/css/app-red.css?v=123" />
+        <link rel="stylesheet" href="{{ root }}assets/css/app-red.css?v=1" />
         <link rel="icon" type="image/png" href="{{ root }}assets/img/favicon-blue.png" />
         <meta name="theme-color" content="#FF7470" />
         <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -31,7 +31,7 @@
             gtag("config", "UA-37753223-4");
         </script>
     </head>
-    <body>
+    <body class="theme{{layout}}">
         {{> header-red }}
 
         {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
@@ -40,6 +40,6 @@
         {{> footer }}
         {{> pswp }}
         {{> icons }}
-        <script src="{{ root }}assets/js/app.js?v=123"></script>
+        <script src="{{ root }}assets/js/app.js?v=1"></script>
     </body>
 </html>
