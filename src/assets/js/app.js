@@ -19,6 +19,8 @@ import "./lib/createpswpfromdom";
 //$(document).foundation();
 require("owl.carousel");
 
+$(document).foundation();
+
 $(".membercard").on("click", "a", function(e) {
     e.preventDefault();
     $(".membercard").removeClass("details-is-shown");
