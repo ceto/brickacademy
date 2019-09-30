@@ -84,6 +84,13 @@
 }
 .superbutton {
     margin: 0;
+    background-color: $primary-color;
+    color:$white;
+
+    &:hover,&:focus {
+        color:$primary-color;
+        background-color: $body-background;
+    }
     @include breakpoint('large') {
         font-size: 1rem;
 
