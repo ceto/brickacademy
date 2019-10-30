@@ -29,7 +29,14 @@ jotform: https://form.jotformeu.com/92242849780365
             src="{{ root }}assets/img/anim_poster_frame_3.jpg"
             alt="Masterclass - Fundamentals of Animation in Archviz"
         /> -->
-        <video autoplay loop poster="{{ root }}assets/img/anim_poster_frame_3.jpg">
+        <video
+            muted
+            autoplay
+            loop
+            -webkit-playsinline
+            playsinline
+            poster="{{ root }}assets/img/anim_poster_frame_3.jpg"
+        >
             <source src="{{ root }}assets/img/academy_bg_video_v4.mp4" type="video/mp4" />
 
             Sorry, your browser doesn't support embedded videos.
