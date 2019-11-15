@@ -1,6 +1,6 @@
 ---
 layout: red
-jotform: "https://form.jotformeu.com/92653289229367"
+jotform: "https://form.jotformeu.com/92242868617365"
 ---
 
 <section id="hero" data-magellan-target="hero" class="hero hero--postprod">
@@ -39,20 +39,16 @@ jotform: "https://form.jotformeu.com/92653289229367"
         <div class="grid-container">
             <div class="hero__callout">
                 <header class="hero__callout__head">
-                    <h4 class="callout__title">Next Course</h4>
+                    <h4 class="callout__title">Coming Soon</h4>
                     <hr class="superlinea small light" />
-                    <p>
-                        <small>Fall Semester</small><br />
-                        <strong class="accent">14 Oct &mdash; 18 Oct</strong>
-                    </p>
                 </header>
                 <p>
-                    <a target="_blank" target="_blank" href="{{ jotform }}" class="button dark">Book a Seat</a>
+                    <a target="_blank" target="_blank" href="{{ jotform }}" class="button dark">Get Course Alert</a>
                 </p>
                 <p>
                     <small>10 seats | 1 week | 40 hours</small><br />
-                    <strong class="accent">500 € + VAT*</strong><br />
-                    <small>*where applicable</small>
+                    <!-- <strong class="accent">500 € + VAT*</strong><br />
+                    <small>*where applicable</small> -->
                 </p>
                 <p>
                     <small>Location: Budapest</small><br />
@@ -126,7 +122,7 @@ jotform: "https://form.jotformeu.com/92653289229367"
                 </p>
             </div>
             <div class="cell large-shrink">
-                <a target="_blank" href="{{ jotform }}" class="button superbutton">Book a Seat</a>
+                <a target="_blank" href="{{ jotform }}" class="button superbutton">Get Course Alert</a>
             </div>
         </div>
     </div>
@@ -304,8 +300,33 @@ jotform: "https://form.jotformeu.com/92653289229367"
 </div>
 
 <div id="facilities" data-magellan-target="facilities">
-    {{> officefigarohightech}}
-    {{> gallery}}
+    {{> officefigarohightech}} {{> gallery}}
 </div>
 
-{{> contact}}
+<section id="contact" class="academycontact ps ps--pricol" data-magellan-target="contact">
+    <div class="grid-container">
+        <div class="grid-x grid-margin-x ps align-center text-center">
+            <div class="cell tablet-10 large-8 xlarge-6">
+                <h2 class="notsupertitle">Would you like to learn from us?<br />Do you have questions?</h2>
+                <hr class="superlinea" />
+                <p class="superlead">
+                    Our staff members are happy to help you, if you need further information on our architectural
+                    visualization courses.
+                </p>
+                <br />
+                <a target="_blank" href="{{ jotform }}" class="button">Get Course ALert</a>
+                <br /><br />
+                <p>
+                    Please contact <strong>Hajnalka Piros</strong> |
+                    <strong><a href="mailto:academy@brickvisual.com">academy@brickvisual.com</a></strong>
+                </p>
+                <hr class="superlinea small" />
+                <p>
+                    Location of the courses:<br />
+                    Budapest, Hungary<br />
+                    1036. Perc street 8. Floor: 4th
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
