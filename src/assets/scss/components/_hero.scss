@@ -4,7 +4,7 @@
     color: #fff;
     //border-top:1px solid $xlight-gray;
     //border-bottom: 1px solid $light-gray;
-    background-color: lighten(#000,80%);
+    background-color: lighten(#000, 80%);
     @include breakpoint(tablet) {
         height: 36rem;
     }
@@ -36,29 +36,33 @@
 
 .hero__content {
     position: relative;
-    font-size:.875rem;
-    padding:calc(4rem + 4vw) 0;
+    font-size: 0.875rem;
+    padding: calc(4rem + 4vw) 0;
     z-index: 2;
-    background-image: linear-gradient(90deg, rgba(#000,.5)), url(../img/intensive-mobile.jpg);
+    background-image: linear-gradient(90deg, rgba(#000, 0.5)),
+        url(../img/intensive-mobile.jpg);
     background-size: cover;
     background-position: top center;
 
     .hero--large & {
-        background-image: linear-gradient(90deg, rgba(#000,.5)), url(../img/archviz-for-architects-hero-mobile.jpg);
+        background-image: linear-gradient(90deg, rgba(#000, 0.5)),
+            url(../img/archviz-for-architects-hero-mobile.jpg);
         @include breakpoint(tablet) {
             background-image: none;
         }
     }
 
     .hero--animation & {
-        background-image: linear-gradient(90deg, rgba(#000,.5)), url(../img/mc-animation-mobile.jpg);
+        background-image: linear-gradient(90deg, rgba(#000, 0.5)),
+            url(../img/mc-animation-mobile.jpg);
         @include breakpoint(tablet) {
             background-image: none;
         }
     }
 
     .hero--postprod & {
-        background-image: linear-gradient(90deg, rgba(#000,.5)), url(../img/mc-postprod-mobile.jpg);
+        background-image: linear-gradient(90deg, rgba(#000, 0.5)),
+            url(../img/mc-postprod-mobile.jpg);
         @include breakpoint(tablet) {
             background-image: none;
         }
@@ -66,17 +70,17 @@
 
     @include breakpoint(tablet) {
         background-color: transparent;
-        padding:0;
+        padding: 0;
         background-image: none;
         position: absolute;
         z-index: 2;
         top: 50%;
-        left:0;
-        width:100%;
+        left: 0;
+        width: 100%;
         transform: translateY(-50%);
     }
     @include breakpoint(large) {
-        font-size:1rem;
+        font-size: 1rem;
     }
     @include breakpoint(xlarge) {
         //font-size:1.125rem;
@@ -109,13 +113,13 @@
 }
 .hero__fig {
     position: absolute;
-    left:0;
-    top:0;
+    left: 0;
+    top: 0;
     width: 100%;
     height: 100%;
     z-index: 0;
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
     background-color: inherit;
     > * {
         outline: none;
@@ -147,29 +151,25 @@
         }
     }
 
-
-
     &:after {
         display: block;
         position: absolute;
-        content:'';
-        left:0;
-        top:0;
+        content: "";
+        left: 0;
+        top: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(#000,.5);
+        background-color: rgba(#000, 0.5);
     }
 
     @supports (mix-blend-mode: multiply) {
         &:after {
-            display:none;
+            display: none;
         }
     }
-
-
 }
 .hero__titlewrap {
-    margin-bottom:.5rem;
+    margin-bottom: 0.5rem;
 }
 .hero__title {
     font-size: 3.25em;
@@ -179,10 +179,10 @@
     background-color: $primary-color;
     display: inline;
     line-height: 1.5;
-    padding-left:.333em;
-    padding-right:.333em;
-    padding-top:.1333em;
-    padding-bottom:.1333em;
+    padding-left: 0.333em;
+    padding-right: 0.333em;
+    padding-top: 0.1333em;
+    padding-bottom: 0.1333em;
     &--nocolor {
         background-color: $body-font-color;
     }
@@ -195,17 +195,17 @@
     box-decoration-break: clone;
     background-color: $primary-color;
     line-height: 1.666;
-    padding-left:.666em;
-    padding-right:.666em;
-    padding-top:.1875em;
-    padding-bottom:.1875em;
+    padding-left: 0.666em;
+    padding-right: 0.666em;
+    padding-top: 0.1875em;
+    padding-bottom: 0.1875em;
     margin: 0 0;
     display: inline;
     &--nocolor {
         background-color: $body-font-color;
     }
     + div {
-        margin-top:2em;
+        margin-top: 2em;
     }
 }
 
@@ -213,25 +213,26 @@
     line-height: 1.4;
     font-weight: $global-weight-regular;
     max-width: 30em !important;
-    font-size:1.125em;
+    font-size: 1.125em;
     text-shadow: 0 0 1rem rgba(#000, 0.75);
-    margin:1em 0 2em;
+    margin: 1em 0 2em;
 }
 
 .hero__addition {
-    font-size:1.125em;
+    font-size: 1.125em;
     text-shadow: 0 0 1rem rgba(#000, 0.75);
     text-transform: uppercase;
-    color:$primary-color;
+    color: $primary-color;
     font-weight: $global-weight-bold;
-    margin:0 0 0 1.5rem;
+    margin: 0 0 0 1.5rem;
     a {
         display: inline-block;
-        transition: all .2s ease;
-        &:hover, &:focus {
+        transition: all 0.2s ease;
+        &:hover,
+        &:focus {
             text-decoration: none;
             color: $white;
-            transform: translateX(.333rem);
+            transform: translateX(0.333rem);
         }
     }
 }
@@ -245,8 +246,8 @@
         background-color: transparent;
         position: absolute;
         top: 50%;
-        left:0;
-        width:100%;
+        left: 0;
+        width: 100%;
         transform: translateY(-50%);
     }
 }
@@ -258,9 +259,9 @@
     @include breakpoint(tablet) {
         background-color: transparent;
         position: absolute;
-        bottom:0;
-        left:0;
-        width:100%;
+        bottom: 0;
+        left: 0;
+        width: 100%;
     }
 }
 
@@ -268,7 +269,7 @@
     text-transform: uppercase;
     font-weight: $global-weight-bold;
     line-height: 1.2;
-    margin:0;
+    margin: 0;
     padding: 1.125em 0;
     text-shadow: 0 0 1rem rgba(#000, 0.75);
     @include breakpoint(tablet) {
@@ -276,28 +277,26 @@
     }
     em {
         font-style: normal;
-        font-size:.666em;
+        font-size: 0.666em;
         font-weight: $global-weight-regular;
     }
 }
 .hero__callout {
     pointer-events: all;
     color: $white;
-    background-color: rgba($primary-color, .75);
+    background-color: rgba($primary-color, 0.75);
     padding: 1.5rem 1.5rem;
     text-align: center;
     max-width: 22rem;
-    margin:0 auto;
-    font-size:1.125rem;
+    margin: 0 auto;
+    font-size: 1.125rem;
     font-weight: $global-weight-regular;
 
     //border:1px solid $light-gray;
     //margin-bottom: 2rem;
 
     @include breakpoint(tablet) {
-
-
-        margin:0 0 0 auto;
+        margin: 0 0 0 auto;
         //mix-blend-mode: multiply;
 
         //max-width: 28rem;
@@ -314,18 +313,18 @@
     }
     .button {
         margin: 0;
-        text-transform:uppercase;
+        text-transform: uppercase;
     }
     .accent {
-        font-size:1.25em;
+        font-size: 1.25em;
     }
     .small {
-        font-size:.75em;
+        font-size: 0.75em;
     }
     p {
-        line-height:1.2;
+        line-height: 1.2;
         &:last-child() {
-            margin-bottom:0;
+            margin-bottom: 0;
         }
     }
     .warning {
@@ -334,17 +333,22 @@
         line-height: 1;
         font-weight: $global-weight-bold;
         text-transform: uppercase;
-        padding:.333em .5em .2875em;
+        padding: 0.333em 0.5em 0.2875em;
         font-size: 66.666%;
-        letter-spacing: .05em;
+        letter-spacing: 0.05em;
         // position: absolute;
     }
 }
 .callout__title {
     text-transform: uppercase;
-    font-size:1.75rem;
-    letter-spacing: .125em;
+    font-size: 1.75rem;
+    letter-spacing: 0.05em;
+    .hero__callout & {
+        margin-left: -1.5rem;
+        margin-right: -1.5rem;
+    }
 }
+
 .hero__callout__footer {
     font-size: 0.875rem;
     margin-top: 1rem;
